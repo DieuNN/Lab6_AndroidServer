@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/upload-1" method="post" enctype="multipart/form-data">
+      <p>Upload multi files, gioi han 2mb/file</p>
+      <input type="file" multiple name="upload-1">
+      <button type="submit">Submit</button>
+    </form>
+
+    <form action="/upload-2" method="post" enctype="multipart/form-data">
+      <p>Upload max 5 files</p>
+      <input type="file" multiple name="upload-2">
+      <button type="submit">Submit</button>
+    </form>
+
+    <form action="/upload-3" method="post" enctype="multipart/form-data">
+      <p>Upload file jpg</p>
+      <input type="file" multiple name="upload-3" accept="image/jpeg">
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
